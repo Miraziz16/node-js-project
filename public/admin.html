@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node/css/node.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="gradient_content">
+        <div class="gradient1"></div>
+        <div class="gradient2"></div>
+    </div>
+    <div class="wrapper">
+        <div class="node-calculator">
+            <div class="form-group">
+                <input type="text" placeholder="Добавить деньги на счет" class="amount_input">
+                <button class="amount_btn">Добавить</button>
+            </div>
+            <div class="amount">
+                <h1>
+                    <span class="amount_number">0</span> ₽
+                </h1>
+            </div>
+        </div>
+        <div class="visualising-data" id="chartContainer">
+            <div class="numbers_and_line_flex">
+                <div class="number_pres_element">
+                    <ul class="left_chart_nums">
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x57.0</li>
+                        <li class="active_line">x55.0</li>
+                        <li class="active_line">x53.0</li>
+                        <li class="active_line">x51.0</li>
+                        <li class="active_line">x50.0</li>
+                        <li class="active_line">x49.6</li>
+                        <li class="active_line">x49.0</li>
+                        <li class="active_line">x48.3</li>
+                        <li class="active_line">x47.8</li>
+                        <li class="active_line">x47.2</li>
+                        <li class="active_line">x46.3</li>
+                        <li class="active_line">x45.6</li>
+                        <!--  -->
+                        <li class="active_line">x44.8</li>
+                        <li class="active_line">x43.7</li>
+                        <li class="active_line">x42.4</li>
+                        <li class="active_line">x41.1</li>
+                        <li class="active_line">x39.5</li>
+                        <li class="active_line">x37.5</li>
+                        <li class="active_line">x35.1</li>
+                        <!--  -->
+                        <li class="active_line">x32.3</li>
+                        <li class="active_line">x28.6</li>
+                        <li class="active_line">x24.2</li>
+                        <li class="active_line">x18.0</li>
+                        <li class="active_line">x9.5</li>
+                        <li class="active_line">x3.4</li>
+                        <li class="active_line">x3.0</li>
+                        <!--  -->
+                        <li class="active_line">x2.6</li>
+                        <li class="active_line">x2.0</li>
+                        <li class="">x1.0</li>
+                    </ul>
+                </div>
+                <div class="line_flex_content">
+                    <div class="line_content">
+                        <div class="text_element"></div>
+                        <div class="timer_bar">
+                            <h1 style="color: #00ff00;" class="timer_delay"><span>10</span></h1>
+                            <div class="bars_timers_progress" style="display: none;">
+                                <div class="time_progress"></div>
+                            </div>
+                        </div>
+                        <div class="crash_line width_rand">
+                            <div class="svg_line">
+                                <svg width="739px" height="380px" viewBox="0 0 587 300" id="svg_width" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M587 301H0C268.732 270.979 503.305 87.8246 580 0V301Z" fill="#ff65fa85"
+                                        id="crash_line_top" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_1_10" x1="212" y1="-9" x2="349.701"
+                                            y2="409.141" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.0651947" stop-color="#00FF57" />
+                                            <stop offset="0.365736" stop-color="#00FF57" id="stop_color_ban-gradient" />
+                                            <stop offset="1" stop-color="#00FF29" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_nub_left">
+                <ul class="down_chart_nums bg_chats"></ul>
+            </div>
+        </div>
+        <div class="buttons_two">
+            <button class="stop_button" id="stop_game">Остановить игру</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./node/js/node.js"></script>
+</body>
+
+</html>
